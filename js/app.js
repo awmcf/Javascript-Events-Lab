@@ -7,8 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const title = event.target.title.value;
     const author = event.target.author.value;
     const category = event.target.category.value;
-    resultBox = document.querySelector('#reading-list')
-    resultBox.textContent = `${title}, ${author}, ${category}`
+    const newListItem = document.createElement('li')
+    newListItem.textContent = `${title}, ${author}, ${category}`
+    resultBox = document.querySelector('#book-1')
   });
 
 
